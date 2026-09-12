@@ -73,6 +73,7 @@ nav {
     display: grid;
     grid-template-rows: 15vh 1fr;
     row-gap: 2vh;
+    margin-bottom: 3vh;
 }
 
 .restaurant-title {
