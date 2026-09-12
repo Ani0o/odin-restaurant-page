@@ -2,13 +2,14 @@ import restaurantImage from "./images/jason-leung-poI7DelFiVA-unsplash.jpg"
 
 const content = document.querySelector("#content");
 const homeButton = document.querySelector(".home");
+const menuButton = document.querySelector(".menu");
+const aboutButton = document.querySelector(".about");
 
 const div = document.createElement('div');
 const h1 = document.createElement('h1');
 const img = document.createElement('img');
 const p = document.createElement('p');
 
-homeButton.classList.add('selected-button');
 div.classList.add('home-content');
 h1.classList.add('restaurant-title');
 img.classList.add('restaurant-image');
@@ -35,6 +36,9 @@ div.appendChild(p);
 function loadHome() {
     content.replaceChildren();
     content.appendChild(div);
+    homeButton.classList.add('selected-button');
+    menuButton.classList.remove('selected-button');
+    aboutButton.classList.remove('selected-button');
 }
 
 export default loadHome;

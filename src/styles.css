@@ -117,3 +117,49 @@ nav {
     font-weight: 500;
     word-spacing: 3px;
 }
+
+
+/* Menu Content */
+
+.menu-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vw;
+    padding: 0 15vw;
+}
+
+.menu-card {
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 1% 10%;
+    background-color: rgb(234, 233, 255);
+    box-shadow: 5px 4px 1px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dish-name {
+    font-size: calc(0.3rem + 1.2vw + 1.2vh);
+    font-weight: 600;
+}
+
+.dish-image {
+    width: 15vw;
+    border-radius: 10px;
+}
+
+.dish-description {
+    font-size: calc(0.1rem + 0.5vw + 0.5vh);
+    font-weight: 500;
+    margin-top: 2vh;
+}
+
+.dish-price {
+    font-size: calc(0.2rem + 0.7vw + 0.7vh);
+    font-weight: 600;
+    color: green;
+    margin-top: 1vh;
+}
