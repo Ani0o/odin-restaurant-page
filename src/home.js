@@ -3,12 +3,13 @@ import restaurantImage from "./images/jason-leung-poI7DelFiVA-unsplash.jpg"
 const content = document.querySelector("#content");
 const homeButton = document.querySelector(".home");
 
-const h1 = document.createElement('div');
+const div = document.createElement('div');
+const h1 = document.createElement('h1');
 const img = document.createElement('img');
 const p = document.createElement('p');
 
-content.classList.add('home-content');
 homeButton.classList.add('selected-button');
+div.classList.add('home-content');
 h1.classList.add('restaurant-title');
 img.classList.add('restaurant-image');
 p.classList.add('restaurant-info');
@@ -27,12 +28,13 @@ p.textContent = `Welcome to Quant Restaurant, where culinary artistry meets math
         and an unforgettable gastronomic journey. Explore our current offerings and discover
         the exact science of exceptional taste.`
 
+div.appendChild(h1);
+div.appendChild(img);
+div.appendChild(p);
+
 function loadHome() {
     content.replaceChildren();
-    
-    content.appendChild(h1);
-    content.appendChild(img);
-    content.appendChild(p);
+    content.appendChild(div);
 }
 
 export default loadHome;

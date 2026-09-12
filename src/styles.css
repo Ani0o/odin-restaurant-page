@@ -69,7 +69,7 @@ nav {
 
 /* Content */
 
-.home-content {
+.home-content, .menu-content, .about-content {
     display: grid;
     grid-template-rows: 15vh 1fr;
     row-gap: 2vh;
