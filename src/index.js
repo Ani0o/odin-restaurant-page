@@ -1,6 +1,7 @@
 import "./styles.css";
 import loadHome from "./home.js";
 import loadMenu from "./menu.js";
+import loadAbout from "./about.js";
 
 const homeButton = document.querySelector(".home");
 const menuButton = document.querySelector(".menu");
@@ -17,3 +18,5 @@ menuButton.addEventListener("click", (e) => {
 aboutButton.addEventListener("click", (e) => {
     loadAbout();
 });
+
+loadHome();
