@@ -27,7 +27,7 @@ p.textContent = `Welcome to Quant Restaurant, where culinary artistry meets math
         perfect harmony. Whether you are joining us for an immersive tasting menu or a
         curated cocktail experience, our team is dedicated to delivering flawless hospitality
         and an unforgettable gastronomic journey. Explore our current offerings and discover
-        the exact science of exceptional taste.`
+        the exact science of exceptional taste.`;
 
 div.appendChild(h1);
 div.appendChild(img);

@@ -6,7 +6,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-h1, p {
+h1, h2, p {
     margin: 0;
 }
 
@@ -163,4 +163,96 @@ nav {
     font-weight: 600;
     color: green;
     margin-top: 1vh;
+}
+
+
+/* About Content */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 3vw;
+}
+
+.about-container > :nth-child(n + 2):nth-child(-n + 4) {
+    margin-top: 6vh;
+}
+
+.about-container h2:first-child {
+    font-size: calc(0.2rem + 1.1vw + 1.1vh);
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+.about-container > :nth-child(-n + 5) h2:first-child::before {
+    content: "\2022";
+    position: absolute;
+    left: 6.5vw;
+}
+
+.about-container > :nth-child(6) h2:first-child::before {
+    content: "\2022";
+    position: absolute;
+    left: 35.1vw;
+}
+
+.about-container > :nth-child(7) h2:first-child::before {
+    content: "\2022";
+    position: absolute;
+    left: 66vw;
+}
+
+.belief, .philosophy, .sourcing, .experience {
+    padding: 0 5vw;
+}
+
+.belief {
+    grid-column: 1 / 4;
+}
+
+.philosophy {
+    grid-column: 1 / 4;
+}
+
+.sourcing {
+    grid-column: 1 / 4;
+}
+
+.experience {
+    grid-column: 1 / 4;
+    padding-bottom: 3vh;
+    border-bottom: 2px solid black;
+}
+
+.experience p:last-of-type {
+    margin-top: 1vh;
+}
+
+.location, .contact, .hours {
+    margin-top: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+}
+
+.location, .contact {
+    border-right: 2px solid black;
+}
+
+.location {
+    padding-left: 5vw;
+    padding-right: 2.5vw;
+}
+
+.contact {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+
+.hours {
+    padding-left: 2.5vw;
+}
+
+.about-container > div p {
+    font-size: calc(0.2rem + 0.6vw + 0.6vh);
+    font-weight: 400;
 }
